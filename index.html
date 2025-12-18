@@ -108,6 +108,7 @@
   <script defer src="static/js/bulma-carousel.min.js"></script>
   <script defer src="static/js/bulma-slider.min.js"></script>
   <script defer src="static/js/index.js"></script>
+  <script defer src="static/js/game.js"></script>
   
   <!-- Structured Data for Academic Papers -->
   <script type="application/ld+json">
@@ -396,6 +397,23 @@
 
 
 
+
+
+<!-- Interactive Robot Stepping Stones Game -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Walk the PLANC Challenge</h2>
+    <div class="game-container" style="background: linear-gradient(180deg, #87CEEB 0%, #E0F6FF 100%); border-radius: 12px; padding: 20px; margin: 20px 0; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+      <canvas id="gameCanvas" width="800" height="400" style="display: block; margin: 0 auto; background: linear-gradient(180deg, #87CEEB 0%, #E0F6FF 100%); border: 2px solid #2563eb; border-radius: 8px; cursor: pointer;"></canvas>
+      <div style="text-align: center; margin-top: 15px; color: #1e293b;">
+        <p><strong>Score: <span id="gameScore">0</span></strong> | <strong>High Score: <span id="gameHighScore">0</span></strong></p>
+        <p style="font-size: 14px; color: #64748b;">Use <strong>SPACEBAR</strong> or <strong>UP ARROW</strong> to jump | Press <strong>R</strong> to restart</p>
+        <button onclick="startGame()" style="margin-top: 10px; padding: 10px 20px; background: #2563eb; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: bold; font-size: 14px;">Start Game</button>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Game Section -->
 
 
 <!--BibTex citation -->
