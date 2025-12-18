@@ -34,6 +34,12 @@ body {
   line-height: 1.6;
   font-size: 16px;
   background-color: var(--background-primary);
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)),
+    url('../images/fpv.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
